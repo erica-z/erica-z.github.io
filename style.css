@@ -3,8 +3,6 @@ body{
     background-color: cornsilk;
     margin: 15mm 15mm 15mm 15mm;
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 ul{
@@ -65,6 +63,6 @@ h5{
 
 @media screen and (max-width: 950px) {
   .column {
-    width: 50%;
+    width: 45%;
   }
 }

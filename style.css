@@ -1,12 +1,8 @@
 
 body{
     background-color: cornsilk;
-    margin: 15mm 15mm 15mm 15mm;
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-}
-
-ul{
-   list-style: none;
+    margin: 0mm 0mm 0mm 0mm;
 }
 
 li{
@@ -14,24 +10,57 @@ li{
   margin-left: 25px;
 }
 
-.column{
+
+#side_bar{
     float:left;
     width: 30%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+
 }
 
-div{
-  padding: 3mm 4mm 3mm 3mm;
-  margin: 3%, 3%, 3%, 3%;
+#wrapper{
+  width:66%;
+  float: right;
+  margin: 1% 1% 1% 1%;
+  padding: 1% 1% 1% 1%;
+  border-width: small;
 }
 
-.outline{
+.container{
   background-color: white;
-  border-radius: 25px;
-  padding: 0mm 3mm 5mm 3mm;
-  border: 1px solid; 
-  margin-top: 8mm;
+  border-radius: 15px;
+  padding: 5mm 5mm 5mm 5mm;
+  margin: 1% 1% 1% 1%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fill: cover;
+  border-radius:50%;
+  margin: 5% 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
+}
+
+#tabs{
+  display:block;
+  list-style-type: none;
+  background-color: aliceblue;
+  font-size: larger;
+  margin: 0% 0% 0% 0%;
+  padding: 5% 3% 5% 3%;
+  border: none;
+}
+
+#tabs li{
+  display:block;
+  margin: 1% 1% 1% 1%;
+  padding: 3% 3% 3% 3%;
+  text-decoration: solid;
+  font-weight: 550;
 }
 
 a{
@@ -54,8 +83,28 @@ h5{
   padding: 0mm 0mm 0mm 0mm;
 }
 
+h1{
+  font-family: Trattatello, fantasy;
+  font-size: 40px;
+  letter-spacing: 0.5mm;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer ul li{
+  list-style-type: none;
+  display: inline-block; 
+  font-size: 24px;
+  margin: 0% 0% 0% 0%;
+  padding: 3% 3% 3% 3%;
+}
 
-@media screen and (max-width: 600px) {
+footer ul{
+  margin: 0% 0% 0% 0%;
+  padding: 8% 8% 8% 8%;
+  border: none;
+}
+
+/* @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
@@ -66,3 +115,4 @@ h5{
     width: 45%;
   }
 }
+ */

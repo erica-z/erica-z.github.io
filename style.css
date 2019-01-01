@@ -1,135 +1,64 @@
 
-body{
-    background-color: cornsilk;
-    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-    margin: 0mm 0mm 0mm 0mm;
+* {
+    margin: 0px;
+    padding: 0px;
+/*     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;  */
+    font-family: cursive;
 }
 
-li{
-  list-style-type: circle;
-  margin-left: 25px;
-}
-
-
-#side_bar{
-    float:left;
-    width: 30%;
+body, html{
     height: 100%;
+    display: grid;
+    background-image: linear-gradient(aliceblue, pink);
+}
+
+#content{
     text-align: center;
-    position: fixed;
-    background-color: aliceblue;
+    margin: auto;
 }
 
-#wrapper{
-  width:66%;
-  float: right;
-  margin: 1% 1% 1% 1%;
-  padding: 1% 1% 1% 1%;
-  border-width: small;
+
+#email, #linkedin{
+    
 }
 
-.container{
-  background-color: white;
-  border-radius: 15px;
-  padding: 5mm 5mm 5mm 5mm;
-  margin: 1% 1% 1% 1%;
+#name{
+    font-size: 50px;
+    font-weight: 700;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  object-fill: cover;
-  border-radius:50%;
-  margin: 5% 5% 5% 5%;
-  padding: 5% 5% 5% 5%;
+.fas, .fa {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px #A785EC;
 }
 
-#tabs{
-  display:block;
-  list-style-type: none;
-  background-color: white;
-  font-size: larger;
-  margin: 0% 0% 0% 0%;
-  padding: 5% 3% 5% 3%;
-  border: none;
-}
 
-#tabs li{
-  display:block;
-  margin: 1% 1% 1% 1%;
-  padding: 8% 8% 8% 8%;
-  text-decoration: solid;
-  font-weight: 550;
+#headshot{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px double white;
 }
 
 a{
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: underline solid navy;
 }
 
-h4{
-  margin-left: 8mm;
-  text-decoration:none;
-  font-weight: normal;
-  line-height:5%;
+#icons{
+    margin-top: 10px;
+
 }
 
-h5{
-  margin-left: 15mm;
-  font-style: italic;
-  font-weight: normal;
-  line-height: 5%;
-  padding: 0mm 0mm 0mm 0mm;
+#icons li{
+    display: inline-block;
+    padding: 5px;
 }
 
-h1{
-  font-family: Trattatello, fantasy;
-  font-size: 40px;
-  letter-spacing: 0.5mm;
-  margin-top: 2%;
-  margin-bottom: 5%;
-}
-footer ul li{
-  list-style-type: none;
-  display: inline-block; 
-  font-size: 24px;
-  margin: 0% 0% 0% 0%;
-  padding: 3% 3% 3% 3%;
+ul{
+    list-style-type: none;
 }
 
-footer ul{
-  margin: 0% 0% 0% 0%;
-  padding: 8% 8% 8% 8%;
-  border: none;
-}
-
-p{
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-header{
-  position:relative;
-  clear:both;
-}
-nav{
-  position:relative;
-  clear:both;
-}
-footer{
-  position:relative;
-  clear:both;
-}
-
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .column {
-    width: 45%;
-  }
-}
- */

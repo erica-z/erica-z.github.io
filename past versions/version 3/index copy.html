@@ -1,4 +1,5 @@
-<!-- version 3 -->
+
+<!-- VERSION 2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,24 +10,29 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <!-- active side bar change color -->
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script>
+            $("#tabs li").live("click",function(){
+            $("#tabs li").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
     <title>GitHub Personal Site -- Erica Zheng</title>
 </head>
 
 <body>
-    <section id='content'>
-        <img id='headshot' src="images/headshot.jpg" alt="headshot">
+    <section id="top_bar">
         <ul>
             <li id='name'>Erica Zheng</li>
-            <li >CS student at <a href="www.umass.edu">UMass Amherst</a></li>
-            <li ><a href="#">Projects</a></li>
-            <li ><a href="EricaZhengResume.pdf">Resume</a></li>
+            <li id='email'><a href="mailto:ericawzheng@gmail.com" class="fas fa-envelope"><span class="label"></span></a></li>
+            <li id='linkedin'><a href="http://www.linkedin.com/in/erica-zheng" class="fa fa-linkedin"><span class="label"></span></a></li>
         </ul>
-        <ul id='icons'>
-            <li><a href="mailto:ericawzheng@gmail.com" class="fas fa-envelope"></a></li>
-            <li><a href="https://github.com/erica-z" class="fa fa-github"></a></li>
-            <li><a href="http://www.linkedin.com/in/erica-zheng" class="fa fa-linkedin"></a></li>
-        </ul>
-        
+    </section>
+    <section id="wrapper">
+        <div class="project">
+                <h1>Project description coming soon</h1>
+        </div>   
     </section>
 
 </body>
